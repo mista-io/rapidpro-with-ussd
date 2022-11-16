@@ -32,6 +32,8 @@ urlpatterns = [
     re_path(r"^", include("temba.tickets.urls")),
     re_path(r"^", include("temba.triggers.urls")),
     re_path(r"^", include("temba.orgs.urls")),
+    re_path(r"^", include("temba.ussd.urls")),
+    re_path(r"^", include("temba.ussd_api.urls")),
     re_path(r"^relayers/relayer/sync/(\d+)/$", sync, {}, "sync"),
     re_path(r"^relayers/relayer/register/$", register, {}, "register"),
     re_path(r"users/user/forget/", RedirectView.as_view(pattern_name="orgs.user_forget", permanent=True)),
@@ -48,19 +50,3 @@ if settings.DEBUG:
 # import any additional urls
 for app in settings.APP_URLS:  # pragma: needs cover
     urlpatterns.append(re_path(r"^", include(app)))
-
-
-def handler500(request):
-    """
-    500 error handler which includes ``request`` in the context.
-
-    Templates: `500.html`
-    Context: None
-    """
-    from sentry_sdk import last_event_id
-
-    from django.http import HttpResponseServerError
-    from django.template import loader
-
-    t = loader.get_template("500.html")
-    return HttpResponseServerError(t.render({"request": request, "sentry_id": last_event_id()}))  # pragma: needs cover
