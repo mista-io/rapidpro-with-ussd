@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'temba';
+  font-family: 'flowartisan,Iconly,temba';
   src:  url('fonts/temba.eot?kyypz2');
   src:  url('fonts/temba.eot?kyypz2#iefix') format('embedded-opentype'),
     url('fonts/temba.ttf?kyypz2') format('truetype'),
@@ -10,9 +10,32 @@
   font-display: block;
 }
 
+
+
+@font-face {
+  font-display: auto;
+  font-family: "flowartisan,Iconly,temba";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/iconly.eot?1686478621767");
+  src: url("fonts/iconly.eot?#iefix") format("embedded-opentype"), url("fonts/iconly.woff2?1686478621767") format("woff2"), url("fonts/iconly.woff?1686478621767") format("woff"), url("fonts/iconly.ttf?1686478621767") format("truetype"), url("fonts/iconly.svg?1686478621767#Iconly") format("svg");
+}
+
+
+@font-face {
+  font-display: auto;
+  font-family: "flowartisan,Iconly,temba";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/iconly-fa.eot?1686481516569");
+  src: url("fonts/iconly-fa.eot?#iefix") format("embedded-opentype"), url("fonts/iconly-fa.woff2?1686481516569") format("woff2"), url("fonts/iconly-fa.woff?1686481516569") format("woff"), url("fonts/iconly-fa.ttf?1686481516569") format("truetype"), url("fonts/iconly-fa.svg?1686481516569#flowartisan") format("svg");
+}
+
+
+
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'temba' !important;
+  font-family: 'flowartisan,Iconly,temba' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -780,4 +803,11 @@
 }
 .icon-vonage:before {
   content: "\e91f";
+}
+
+.icon-maista_logo_-1:before {
+  content: "\e000";
+}
+.icon-flowartisan:before {
+  content: "\e001";
 }

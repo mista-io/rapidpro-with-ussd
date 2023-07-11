@@ -13,10 +13,10 @@ from ..utils.fields import InputWidget, SelectWidget, CompletionTextarea, Checkb
 hostname = f"https://{socket.gethostname()}"
 
 CONFIG_DEFAULT_REQUEST_STRUCTURE = (
-    "{{short_code=serviceCode}},  {{session_id=sessionId}}, {{from= msisdn}}, {{text=input}}"
+    "{{short_code=serviceCode}},  {{session_id=sessionId}}, {{from=msisdn}}, {{text=UserInput}}"
 )
 CONFIG_DEFAULT_RESPONSE_STRUCTURE = (
-    "{{text=responseString}},  {{action=continueSession}}"
+    "{{text=message}}, {{action=ContinueSession}}"
 )
 
 

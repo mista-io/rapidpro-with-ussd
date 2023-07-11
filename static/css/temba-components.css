@@ -10,7 +10,8 @@ html.dragging * {
 html {
 
   --font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  --primary-rgb: 35, 135, 202;
+  --primary-rgb: 40, 199, 111;
+
   --secondary-rgb: 140, 51, 140;
   --tertiary-rgb: 135, 202, 35;
 
@@ -53,7 +54,8 @@ html {
   --color-secondary-light: #ccc;
 
   /* dark colors, nav bar, buttons, etc */
-  --color-primary-dark: rgb(var(--primary-rgb));
+  --color-primary-dark: rgb(40, 199, 111);
+
   --color-secondary-dark: rgb(var(--secondary-rgb));
 
   --color-available: #00f100;
@@ -126,7 +128,7 @@ html {
   --color-text-help: rgb(120,120,120);
   --label-size: 14px;
   
-  --header-bg: var(--color-primary-dark);
+  --header-bg: rgb(40, 199, 111);
   --header-text: var(--color-text-light);
   
   --temba-textinput-padding: 9px;
@@ -229,3 +231,4 @@ temba-menu {
 temba-menu:defined{
   display: block;
 }
+

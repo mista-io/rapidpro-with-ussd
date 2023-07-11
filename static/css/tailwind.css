@@ -761,7 +761,7 @@ a:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(247, 247, 247, var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(113, 113, 113, var(--tw-text-opacity));
+  color: rgba(40, 199, 111, var(--tw-text-opacity));
 }
 
 .button-light:hover {
@@ -11230,7 +11230,8 @@ code {
   --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgba(59, 130, 246, 0.5);
+  --tw-ring-color:   rgb(40, 199, 111),0.5;
+
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
 }
@@ -12751,7 +12752,7 @@ code {
 
 .text-gray-100 {
   --tw-text-opacity: 1;
-  color: rgba(247, 247, 247, var(--tw-text-opacity));
+  color: #65c07466;
 }
 
 .text-gray-200 {
@@ -12939,7 +12940,7 @@ code {
 
 .hover\:text-gray-100:hover {
   --tw-text-opacity: 1;
-  color: rgba(247, 247, 247, var(--tw-text-opacity));
+  color: #52545466;
 }
 
 .hover\:text-gray-200:hover {
@@ -26905,7 +26906,7 @@ code {
 
   .md\:hover\:text-gray-100:hover {
     --tw-text-opacity: 1;
-    color: rgba(247, 247, 247, var(--tw-text-opacity));
+    color: #52545466;
   }
 
   .md\:hover\:text-gray-200:hover {
@@ -30171,4 +30172,7 @@ code {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+
+  
 }

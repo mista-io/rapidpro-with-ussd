@@ -60,6 +60,7 @@ class Handler(SmartModel):
     aggregator = models.CharField(
         max_length=150,
         verbose_name=_("Aggregator"),
+        default="MISTA",
         help_text=_("Your USSD aggregator"),
     )
 
@@ -106,10 +107,11 @@ class Handler(SmartModel):
 
     signal_menu_type_strings = models.CharField(
         max_length=20,
+        default="0,1",
         verbose_name=_("Signal Exit/Wait-Response Flag"),
         help_text=_("Comma-separated key words that indicate which menu type end-user receives e.g END,CON"),
         null=True,
-        blank=True,
+        blank=False,
     )
 
     auth_scheme = models.CharField(

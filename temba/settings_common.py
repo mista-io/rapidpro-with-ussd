@@ -44,6 +44,12 @@ MANAGERS = ADMINS
 
 USE_DEPRECATED_PYTZ = True
 
+
+
+MISTA_JWT_SECRET="Iz3IJVquJJYGQJ2sWnSPEB3e7PsZIHRrDUTehoIFDeebgqF8d73wJxxiVa2wPgbE"
+MISTA_ADMIN_TOKEN="Bearer 62|Gyb36StR9VJbxa4VCzYjiwqGpWoCNbcAQl166Ugt"
+
+
 # -----------------------------------------------------------------------------------
 # set the mail settings, override these in your settings.py
 # if your site was at http://temba.io, it might look like this:
@@ -865,9 +871,9 @@ TEST_EXCLUDE = ("smartmin",)
 # -----------------------------------------------------------------------------------
 _default_database_config = {
     "ENGINE": "django.contrib.gis.db.backends.postgis",
-    "NAME": "temba",
-    "USER": "temba",
-    "PASSWORD": "temba",
+    "NAME": "rapidpro_ussd",
+    "USER": "ussd",
+    "PASSWORD": "Root@2022",
     "HOST": "localhost",
     "PORT": "5432",
     "ATOMIC_REQUESTS": True,
@@ -1086,6 +1092,8 @@ CHANNEL_TYPES = [
     "temba.channels.types.zenvia_whatsapp.ZenviaWhatsAppType",
     "temba.channels.types.zenvia.ZenviaType",
     "temba.channels.types.android.AndroidType",
+    "temba.channels.types.mista.MistaType",
+
 ]
 
 ANALYTICS_TYPES = [

@@ -21,7 +21,7 @@ class ClaimView(ClaimViewMixin, SmartFormView):
         number = forms.CharField(
             max_length=14,
             min_length=1,
-            label=_("Number"),
+            label=_("Number or USSD Shortcode"),
             required=False,
             help_text=_("The phone number or that this channel will send from"),
         )
